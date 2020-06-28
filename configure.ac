@@ -379,6 +379,9 @@ then
 	*-*-cygwin*)
 		ac_sys_system=Cygwin
 		;;
+    *-*-emscripten*)
+        ac_sys_system=Emscripten
+        ;;
 	*-*-vxworks*)
 	    ac_sys_system=VxWorks
 	    ;;
@@ -428,6 +431,9 @@ if test "$cross_compiling" = yes; then
 	*-*-cygwin*)
 		_host_cpu=
 		;;
+    *-*-emscripten*)
+        _host_cpu=
+        ;;
 	*-*-vxworks*)
 		_host_cpu=$host_cpu
 		;;
