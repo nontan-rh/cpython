@@ -1544,11 +1544,11 @@ then
                     OPT="-g -O0 -Wall"
                 fi
 	    else
-		OPT="-g $WRAP -O3 -Wall"
+		OPT="-g $WRAP -Os -Wall"
 	    fi
 	    ;;
 	*)
-	    OPT="-O3 -Wall"
+	    OPT="-Os -Wall"
 	    ;;
 	esac
 
